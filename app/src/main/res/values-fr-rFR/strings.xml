@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GroupeA</string>
+    <string name="activity_main_button_next" translatable="false">Suivant</string>
+    <string name="form_activity_back">Précédent</string>
+    <string name="activity_main_textView">Salut Nizare</string>
+    <string name="form_activity_plainText">Salut Nizare</string>
+</resources>

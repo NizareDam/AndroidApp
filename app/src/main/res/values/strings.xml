@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GroupeA</string>
+    <string name="activity_main_button_next">Next</string>
+    <string name="form_activity_back">Back</string>
+    <string name="form_activity_plainText">Hello Nizare</string>
+    <string name="activity_main_textView">Hello Nizare</string>
+
+
+</resources>
