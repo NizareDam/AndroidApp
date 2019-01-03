@@ -1,4 +1,4 @@
-package com.example.nizare.groupea;
+package info6.tse.nizare.ihm_appliandroid;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.nizare.groupea", appContext.getPackageName());
+        assertEquals("info6.tse.nizare.ihm_appliandroid", appContext.getPackageName());
     }
 }

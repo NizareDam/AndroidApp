@@ -1,35 +1,49 @@
-package com.example.nizare.groupea;
+package info6.tse.nizare.ihm_appliandroid;
 
-import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class FormActivity extends AppCompatActivity implements View.OnClickListener{
-
+public class FormActivity extends AppCompatActivity {
+    private Button buttonSave;
     private EditText editTextName;
-    private Button buttonNext;
-
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
 
-        buttonNext = findViewById(R.id.activity_main_button_next);
-        editTextName = findViewById(R.id.activity_form_editTextName);
+        editTextName = findViewById(R.id.activity_main_editText_name);
+        buttonSave = findViewById(R.id.activity_form_button_save);
 
-
+        ((View) buttonSave).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                save();
+            }
+        });
     }
-    private void next(){
 
+    private void save(){
+        String name = editTextName.getText().toString();
+        editTextName.setText("");
+        if(!name.isEmpty()){
+            DataManager.getInstance().addName(name);
+        }
+
+        finish();
     }
 
-    @Override
+
+}
+
+
+
+/*
+        @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==1){
@@ -52,4 +66,5 @@ public class FormActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
-}
+
+     */

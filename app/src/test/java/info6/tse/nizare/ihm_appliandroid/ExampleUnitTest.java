@@ -1,4 +1,4 @@
-package com.example.nizare.groupea;
+package info6.tse.nizare.ihm_appliandroid;
 
 import org.junit.Test;
 
